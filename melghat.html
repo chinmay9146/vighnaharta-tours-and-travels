@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(199, 224, 224);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgb(199, 224, 224);
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 22px;
+        }
+        header img {
+            height: 70px; 
+            position: absolute;
+        }
+        nav {
+            background-color: rgb(54, 69, 73);
+            padding: 10px 0;
+            text-align: center;
+            color:whitesmoke; 
+            font-size: 22px;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 40px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        nav a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        .container1 {
+            width: 91%;
+            border: solid 4px rgb(131, 182, 131);
+            margin-left: 5%;
+            background-color: rgb(151, 199, 199);
+            margin-top: 10px;
+        }
+        .container1 .pict img {
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-right: 30px;
+            float: left;
+            height: 353px;
+        }
+        .info h1{
+            text-align: center;
+            color: rgb(27, 70, 64);
+        }
+        .info hr {
+            border-color: rgb(131, 182, 131);
+            height: 3px;
+            background-color: rgb(131, 182, 131);
+            margin-right: 20px;
+        }
+        .info img {
+            width: 75px;
+            height: 75px;
+            margin-bottom: -10px;
+        }
+        .info ul li {
+            float: left;
+            margin-right: 50px;
+        }
+        .info p {
+            font-size: 22px;
+        }
+        .best {
+            width: 90%;
+            border: solid 4px rgb(131, 182, 131);
+            margin-left: 5%;
+            background-color: rgb(151, 199, 199);
+            margin-top: 20px;
+            padding-left: 20px;
+            padding-top: 20px;
+            font-size: 22px;
+        }
+        .gallery {
+            width: 89.5%;
+            border: solid 4px rgb(131, 182, 131);
+            margin-left: 5%;
+            background-color: rgb(151, 199, 199);
+            margin-top: 20px;
+            padding: 15px 15px 15px 15px;
+        }
+        .gallery img {
+            width: 30%;
+            height: 400px;
+            display: inline-block;
+            padding: 20px 20px 20px 20px;
+        }
+        .gallery h1 {
+            text-align: center;
+            color: rgb(27, 70, 64);
+        }
+        .gallery hr {
+            border-color: rgb(131, 182, 131);
+            height: 3px;
+            background-color: rgb(131, 182, 131);
+            margin-right: 20px;
+        }
+        .itinerary {
+            width: 89.5%;
+            border: solid 4px rgb(131, 182, 131);
+            margin-left: 5%;
+            background-color: rgb(151, 199, 199);
+            margin-top: 20px;
+            padding: 15px 15px 15px 15px;
+            font-size: 22px;
+        }
+        .itinerary h1 {
+            text-align: center;
+            color: rgb(27, 70, 64);
+        }
+        .itinerary hr {
+            border-color: rgb(131, 182, 131);
+            height: 3px;
+            background-color: rgb(131, 182, 131);
+            margin-right: 20px;
+        }
+        .days h2 {
+            float: left;
+            padding: 10px;
+            background-color: rgb(175, 190, 107);
+            color: rgb(27, 70, 64);
+            border-radius: 50px;
+        }
+        .days {
+            padding-bottom: 15px;
+        }
+        .directions p {
+            padding-left: 180px;
+            padding-right: 180px;
+        }
+        .form {
+            width: 89.5%;
+            border: solid 4px rgb(131, 182, 131);
+            margin-left: 5%;
+            background-color: rgb(151, 199, 199);
+            margin-top: 20px;
+            padding: 15px 15px 15px 15px;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        .form h1 {
+            text-align: center;
+            color: rgb(27, 70, 64);
+        }
+        .form hr {
+            border-color: rgb(131, 182, 131);
+            height: 3px;
+            background-color: rgb(131, 182, 131);
+            margin-right: 20px;
+        }
+        table, td {
+            border: 0px solid black;
+            border-collapse: collapse;
+            table-layout: auto;
+            margin: 15px;
+        }
+        input {
+            width: 70%;
+            height: 20px;
+            margin: 5px;
+            background-color: rgb(100, 167, 144);
+            color:rgb(23, 41, 35);
+            border-color: rgb(88, 153, 131);
+            font-size: 22px;
+        }
+        textarea {
+            width: 70%;
+            margin: 5px;
+            background-color: rgb(100, 167, 144);
+            color: black;
+            border-color: black;
+            font-size: 18px;
+        }
+        input[type="submit"]{
+            width: 15%;
+            background-color: rgb(36, 134, 102);
+            height: 30px;
+            color: black;
+            font-size: 22px;
+            border-color: black;
+        }
+        .footer {
+            background-color: rgb(54, 69, 73);
+            margin: 0px;
+            padding-bottom: 10px;
+            width: 100%;
+            color: whitesmoke;  
+        }
+        .footer p {
+            margin: 0px;
+            display: inline-block;
+            padding: 9px;
+        }
+        .footer img {
+            height: 20px;
+            width: 20px;
+        }
+        footer {
+            font-size: 22px;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="airplane-flight.png" alt="logo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspvighnaharta tours and travels</h1>
+    </header>
+    <nav>
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="#section-1"><li >Packages</li></a>
+            <a href="#section-2"><li>Gallery</li></a>
+            <a href="#section-3"><li>Itinerary</li></a>
+            <a href="#section-4"><li>Enquiry Form</li></a>
+            <a href="#section-5"><li>Contact us</li></a>
+        </ul>
+    </nav>
+    <div class="container1" id="section-1">
+        <div class="pict">
+            <img src="images/melghat/Smooth-coated_Otter_(14157590954).jpg" alt="mungus">
+        </div>
+        <div class="info">
+            <h1>Melghat Wildlife Sanutary</h1>
+            <hr>
+            <ul>
+                <li>
+                    <figure>
+                    <img src="logos/bus (1).png" alt="bus">
+                    <figcaption><b>Transfer</b></figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="logos/breakfast.png" alt="meals">
+                        <figcaption><b>Meals</b></figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="logos/hotel.png" alt="Accommodation">
+                        <figcaption><b>Accommodation</b></figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="logos/binocular.png" alt="Sightseeing">
+                        <figcaption><b>Sightseeing</b></figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="logos/tour-guide.png" alt="tour-guide">
+                        <figcaption><b>Tour Guide</b></figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <p>
+                <br><br><br><br><br>
+               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Established in the year of 1985, Melghat wildlife Sanctuary another famous wildlife sanctuaries in Maharashtra which is the proud home to many flora and fauna. Surrounded by the Satpura range and the Tapti River, the Wildlife sanctuary is famous as a tiger reserve. The name Melghat means ‘meeting the Ghats’ as Melghat wildlife sanctuary meets the Western Ghats of India.
+
+               The Melghat Sanctuary is also the home to some of the endangered species; Forest Owlet is an example of such endangered species. Nilgai, sambar, leopard, sloth bears and other animals can also be seen in the forest.
+               
+            </p>
+        </div>
+    </div>
+    <div class="best">
+        <p><b>Best time to visit:-</b> The best time to visit the wildlife sanctuary is from December to June.</p>
+        <p><b>Location:-</b> Located at Amravati District of Maharashtra.
+        </p>
+        <p><b>Tour Duration:-</b>2Nights-3days </p>
+        <p><b>Our Pricing:-</b> ₹3999 Per Person</p>
+    </div>
+    <div class="gallery" id="section-2">
+        <h1>Gallery</h1>
+        <hr>
+        <img src="images/melghat/13042018_MelghatTigerReserve_02.jpg" alt="tiger near lake">
+        <img src="images/melghat/17438334_393196871064419_1722277285786025984_n.jpg" alt="water pond">
+        <img src="images/melghat/19535286_750500381741670_2992978226852134912_n.jpg" alt="watch tower">
+        <img src="images/melghat/40645914_321671081719531_7341394441727510877_n.jpg" alt="leopard">
+        <img src="images/melghat/40661548_1065633290261431_8899565497780017018_n.jpg" alt="bird in the lake">
+        <img src="images/melghat/40720102_310680226360535_6271300119441822425_n.jpg" alt="water passing">
+    </div>
+    <div class="itinerary" id="section-3">
+        <h1>Itinerary</h1>
+        <hr>
+        <div class="days">
+            <h2>Day 1</h2>
+        </div>
+        <div class="directions">    
+            <p>Depart from Mumbai / Pune to reach Koynanagar. On arrival, check-in to the hotel. Post Lunch, visit the Koyna Dam & Lake Tapping Project. Overnight stay at the Hotel..<br><br></p>
+        </div>
+        <div class="days">
+            <h2>Day 2</h2>
+        </div>
+        <div class="directions">
+            <p>
+                In the morning, after Breakfast, leave to visit the Ozarde waterfall and Ghat Matha Wind mill projects. Return to the hotel for lunch. In the evening, after taking rest for a while, leave for Nehru Garden and experience boating in Koyna Backwater. Overnight stay at the Hotel.<br><br>
+            </p>
+        </div>
+        <div class="days">
+            <h2>Day 3</h2>
+        </div>
+        <div class="directions">
+            <p>Check-out from the Hotel after breakfast, and visit the Koyna Wildlife Sanctuary. Then depart for Mumbai / Pune. Upon reaching, get down at your place, or Airport / Bus / Railway station to carry on with your further destination.
+            Tour Ends</p>
+        </div>
+    </div>
+    <div class="form" id="section-4">
+        <h1>Fill The Enquiry Form</h1>
+        <hr>
+        <form>
+            <table width="100%" align="center">
+                <tr>
+                    <td style="text-align: end;width: 15%;"><label for="name">Enter Your Name:</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="your name" maxlength="30" required></td>
+                    <td style="text-align:end; width:20%;"><label for="mnumber">Enter Your Mobile Number:</label></td>
+                    <td><input type="tel" id="mnumber" name="mnumber" placeholder="eg.9146644780" pattern="[0-9]{10}" required></td>
+                </tr>
+                <tr>
+                    <td style="text-align: end;width: 15%;"><label for="email">Enter Your Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="your email" required ></td>
+                    <td style="text-align: end;width: 20%;"><label for="ddate">Departure Date:</label></td>
+                    <td><input type="date" id="ddate" name="ddate" required></td>
+                </tr>
+                <tr>
+                    <td style="text-align: end;width: 15%;"><label for="passenger">Number of Passengers:</label></td>
+                    <td><input type="number" id="passenger" name="passenger" min="1" max="10" placeholder="e.g. 2" required ></td>
+                    <td style="text-align: end;width: 20%;"><label for="Description">Tour Description:</label></td>
+                    <td><textarea rows="3" id="Description" name="Description" placeholder="with trip i want to go for other destinations also so can you...." maxlength="100" required></textarea></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;" colspan="4"><input type="submit" value="submit"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <footer class="footer" id="section-5">
+        <h2>Contact us</h2>
+        <p><img src="logos/map.png" alt="address icon">waman nagar,purna road,nanded.</p>
+        <p><img src="logos/phone.png" alt="phone icon" >9146644780</p>
+        <p><img src="logos/gmail.png" alt="gmail icon" >pathakchinmay49@gmail.com</p>
+        <h6>Copyright©2024, Vighnaharta tours and travel Pvt. Ltd. All rights reserved.</h6>
+    </footer>
+</body>
+</html>

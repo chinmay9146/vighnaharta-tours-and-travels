@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(199, 224, 224);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgb(199, 224, 224);
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 22px;
+        }
+        header img {
+            height: 70px; 
+            position: absolute;
+        }
+        nav {
+            background-color: rgb(54, 69, 73);
+            padding: 10px 0;
+            text-align: center;
+            color:whitesmoke; 
+            font-size: 22px;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 40px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        nav a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        .first img {
+            width: 100%;
+            height: 700px;
+            border-radius: 15px;
+        }
+        .info h1 {
+            color:rgb(212, 63, 63);
+            font-size: 60px;
+            margin-bottom: 2px;
+            margin-top: 7px;
+        }
+        .info p {
+            font-size: 25px;
+            margin-top: 2px;
+            color: rgb(49, 6, 129);
+        }
+        .packages a {
+            color: black;
+            text-decoration: none;
+        }
+        .package1 img {
+            width: 100%;
+            height: 400px;
+            border-radius: 15px;
+        }
+        .package2 img {
+            width: 100%;
+            border-radius: 15px;
+            height: 400px;
+        }
+        .packages h2 {
+            font-size: 40px;
+            text-align: center;
+            background-color: rgb(102, 102, 102);
+            color: whitesmoke;   
+        }
+        .package1 figcaption {
+            text-align: center;
+        }
+        .package2 figcaption {
+            text-align: center;
+        }
+        .package1 {
+           display: grid;
+           grid-template-columns: 33% 33% 33%;
+        }
+        .package2 {
+            display: grid;
+           grid-template-columns: 33% 33% 33%;
+        }
+        .choose h1 {
+            text-align: center;
+            font-size: 40px;
+            background-color: rgb(102, 102, 102);
+            color: whitesmoke;
+        }
+        
+        .container p {
+            font-size: 22px;
+        }
+        .container img {
+            width: 100%;
+        }
+        table, td {
+            border: 1px solid black;
+            width:100%;
+        }
+        .footer {
+            background-color: rgb(54, 69, 73);
+            margin: 0px;
+            padding-bottom: 10px;
+            width: 100%;
+            color: whitesmoke;
+            
+        }
+        .footer p {
+            margin: 0px;
+            display: inline-block;
+            padding: 9px;
+        }
+        .footer img {
+            height: 20px;
+            width: 20px;
+
+        }
+        footer {
+            font-size: 22px;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="airplane-flight.png" alt="logo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspVighnaharta Tours and Travels</h1>
+    </header>
+    <nav>
+        <ul>
+            <a href="#section-1"><li>Home</li></a>
+            <a href="#section-2"><li >Packages</li></a>
+            <a href="#section-3"><li>Why choose us</li></a>
+            <a href="#section-4"><li>Contact us</li></a>
+        </ul>
+    </nav>
+    <div class="first" id="section-1">
+        <img src="images/New Project (1).png" alt="travelling">   
+    </div>
+    <div class="info">
+        <h1>Let us plan you a perfect holiday</h1>
+        <p>Custom-Crafted Tour Packages for Unforgettable Holiday Experiences in Maharashtra.</p>
+    </div>
+    <div class="packages" id="section-2">
+        <h2>Our Packages</h2>
+        <div class="package1">
+            <div class="wildlife">
+              <figure>
+                <a href="wildlife.html"><img src="images/sagar-paranjape-IzbOyxEBem4-unsplash.jpg" alt="tiger"></a>
+                <figcaption>
+                    <a href="wildlife.html"><h3>Wildlife</h3></a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="heritage">
+                <figure>
+                    <a href="heritage1.html"><img src="images/ellora-caves-maharashtra.jpg" alt="kailash temple"></a>
+                  <figcaption>
+                      <a href="heritage1.html"><h3>Heritage</h3></a>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="hill">
+                <figure>
+                    <a href="hill station.html"><img src="images/mohan-vamsi-somireddi-ZqudEbF1QwY-unsplash.jpg" alt="hills"></a>
+                  <figcaption>
+                      <a href="hill station.html"><h3>Hill Station</h3></a>
+                  </figcaption>
+                </figure>
+              </div>
+        </div>
+        <div class="package2">
+              <div class="temple">
+                <figure>
+                  <a href="pilgrimage.html"><img src="images/pilgrimage.jpg" alt="temples"></a>
+                  <figcaption>
+                      <a href="pilgrimage.html"><h3>pilgrimage</h3></a>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="trekking">
+                <figure>
+                  <a href="adventure.html"><img src="images/trekk_cleanup.webp" alt="trekk"></a>
+                  <figcaption>
+                      <a href="adventure.html"><h3>adventure and trekking</h3></a>
+                  </figcaption>
+                </figure>
+              </div>
+        </div>
+    </div>
+    <div class="choose" id="section-3">
+        <h1>Why choose us ?</h1>
+          <div class="container">
+            <table>
+                <tr>
+                    <td>
+                      <div style="background-color: rgb(165, 212, 165); border-radius: 10px; margin: 10px;width: 25%;" >
+                        <figure>
+                          <img src="logos/trust.png" alt="trust">
+                          <figcaption>
+                            <h2>your trusted advisor</h2>
+                            <p>Well answer your every question. Our experienced travel experts and real-fire on field know-how gives us this advantage.</p>
+                           </figcaption>
+                        </figure>  
+                      </div>
+                    </td>
+                    <td>  
+                      <div style="background-color: rgb(201, 166, 142); border-radius: 10px; margin: 10px ;width: 25%;">
+                        <figure>
+                          <img src="logos/listen.png" alt="listen">
+                          <figcaption>
+                            <h2>we love listening</h2>
+                            <p>Your holiday, your torms We'll fill in the blanks to plan the perfect trip in the blink of an eye</p>
+                          </figcaption>
+                        </figure>
+                       </div>
+                    </td>
+                    <td>
+                      <div style="background-color: rgb(223, 176, 223); border-radius: 10px; margin: 10px; width: 25%;">
+                      <figure>
+                        <img src="logos/best-customer-experience.png" alt="exprience">
+                        <figcaption>
+                          <h2>memorable expriences</h2>
+                          <p>Do everything or do nothing. Either way your holiday will be nothing less than extraordinary.</p>
+                        </figcaption>
+                      </figure>
+                      </div>
+                    </td>
+                </tr>
+            <div style="background-color: rgb(216, 211, 172); border-radius: 10px; margin: 10px; width: 25%;">
+                <figure>
+                    <img src="logos/quality.png" alt="value">
+                    <figcaption>
+                        <h2>value for money tours</h2>
+                        <p>it's about creating memories that last a lifetime. Our holiday packages are hassle-free and designed with a focus on value for money, ensuring every moment you spend with us is well worth it</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div style="background-color: rgb(211, 176, 182); border-radius: 10px; margin: 10px; width: 25%;">
+                <figure>
+                    <img src="logos/talent-management.png" alt="20+ years of exprience">
+                    <figcaption>
+                        <h2>20+ years of exprience</h2>
+                        <p>Boasting over two decades in the tourism and hospitality Industry, Vighnaharta tours and travels has amassed invaluable experience that sets us apart</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div style="background-color: rgb(127, 168, 180); border-radius: 10px; margin: 10px; width: 25%;">
+                <figure>
+                    <img src="logos/tour-guide.png" alt="guide">
+                    <figcaption>
+                        <h2>a tour guide</h2>
+                        <p>Our experienced team at Vighnaharta tours and travels is more than just proficient they are destination experts for every location within the mesmerizing landscape of India. Their knowledge is an invaluable asset for every traveler</p>
+                    </figcaption>
+                </figure>
+            </div>
+            </table>
+          </div>
+    </div>
+    <footer class="footer" id="section-4">
+        <h2>Contact us</h2>
+        <p><img src="logos/map.png" alt="address icon">waman nagar,purna road,nanded.</p>
+        <p><img src="logos/phone.png" alt="phone icon" >9146644780</p>
+        <p><img src="logos/gmail.png" alt="gmail icon" >pathakchinmay49@gmail.com</p>
+        <h6>Copyright©2024, Vighnaharta tours and travel Pvt. Ltd. All rights reserved.</h6>
+    </footer>
+</body>
+</html>

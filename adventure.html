@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(199, 224, 224);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgb(199, 224, 224);
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 22px;
+        }
+        header img {
+            height: 70px; 
+            position: absolute;
+        }
+        nav {
+            background-color: rgb(54, 69, 73);
+            padding: 10px 0;
+            text-align: center;
+            color:whitesmoke; 
+            font-size: 22px;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 40px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        nav a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        .packages a {
+            color: black;
+            text-decoration: none;
+        }
+        .package1 img {
+            width: 100%;
+            border-radius: 15px;
+            height: 400px;
+        }
+        .package2 img {
+            width: 100%;
+            border-radius: 15px;
+            height: 400px;
+        }
+        .packages h2 {
+            font-size: 40px;
+            text-align: center;
+            background-color: rgb(102, 102, 102);
+            color: whitesmoke;   
+        }
+        .package1 figcaption {
+            text-align: center;
+        }
+        .package2 figcaption {
+            text-align: center;
+        }
+        .package1 {
+           display: grid;
+           grid-template-columns: 33% 33% 33%;
+        }
+        .package2 {
+            display: grid;
+           grid-template-columns: 33% 33% 33%;
+        }
+        .footer {
+            background-color: rgb(54, 69, 73);
+            margin: 0px;
+            padding-bottom: 10px;
+            width: 100%;
+            color: whitesmoke;
+            
+        }
+        .footer p {
+            margin: 0px;
+            display: inline-block;
+            padding: 9px;
+        }
+        .footer img {
+            height: 20px;
+            width: 20px;
+
+        }
+        footer {
+            font-size: 22px;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="airplane-flight.png" alt="logo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspVighnaharta Tours and Travels</h1>
+    </header>
+    <nav>
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="#section-1"><li >Packages</li></a>
+            <a href="#section-2"><li>Contact us</li></a>
+        </ul>
+    </nav>
+    <div class="packages" id="section-1">
+        <h2>Our Adventure And Trekking Packages</h2>
+        <div class="package1">
+            <div>
+              <figure>
+                <img src="images/harihar/1535626254_38412026_10211522756335247_6376961557548498944_o-01.jpeg" alt="harihar fort">
+                <figcaption>
+                    <h3>Harihar Fort</h3>
+                </figcaption>
+              </figure>
+            </div>
+            <div>
+                <figure>
+                  <img src="images/harishchandra gad/2024-01-09.jpg" alt="Harishchandragad">
+                  <figcaption>
+                      <h3>Harishchandragad</h3>
+                  </figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="images/kalavanti durg/2023-07-23.jpg" alt="kalavanti durg">
+                  <figcaption>
+                      <h3>Kalavanti Durg</h3>
+                  </figcaption>
+                </figure>
+              </div>
+        </div>
+        <div class="package2">
+            <div>
+                <figure>
+                  <img src="images/kalsubai/2023-01-04.webp" alt="kalsubai">
+                  <figcaption>
+                      <h3>Kalasubai</h3>
+                  </figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="images/rajmachi fort/2018-10-21.jpg" alt="rajmachi fort">
+                  <figcaption>
+                      <h3>Rajmachi Fort</h3>
+                  </figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="images/visapur fort/2019-08-17.jpg" alt="Viasapur Fort">
+                  <figcaption>
+                      <h3>Viasapur Fort</h3>
+                  </figcaption>
+                </figure>
+              </div>
+        </div>
+    </div>
+    <footer class="footer" id="section-2">
+        <h2>Contact us</h2>
+        <p><img src="logos/map.png" alt="address icon">waman nagar,purna road,nanded.</p>
+        <p><img src="logos/phone.png" alt="phone icon" >9146644780</p>
+        <p><img src="logos/gmail.png" alt="gmail icon" >pathakchinmay49@gmail.com</p>
+        <h6>Copyright©2024, Vighnaharta tours and travel Pvt. Ltd. All rights reserved.</h6>
+    </footer>
+</body>
+</html>
